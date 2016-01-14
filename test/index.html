@@ -1,0 +1,9 @@
+<script src="./jquery.min.js"></script>
+<script>
+
+$.get("http://local.com/phantom/?words=" + encodeURI("バナナ") +"&num=20", function(data){
+    console.log(data);
+    $("body").append(data);
+});
+
+</script>
